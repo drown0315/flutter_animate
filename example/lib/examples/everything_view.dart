@@ -4,6 +4,7 @@
 import 'dart:math';
 import 'dart:ui' as ui;
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
@@ -20,8 +21,8 @@ class EverythingView extends StatelessWidget {
         childAspectRatio: 0.85,
         children: [
           /***
-          A few fun / interesting examples
-          ***/
+                  A few fun / interesting examples
+               ***/
           tile(
             'fade+tint+blur+scale',
             a
@@ -103,9 +104,9 @@ class EverythingView extends StatelessWidget {
           ),
 
           /***
-          Catalog of minimal examples for all visual effects.
-          In alphabetic order of the effect's class name.
-          ***/
+                  Catalog of minimal examples for all visual effects.
+                  In alphabetic order of the effect's class name.
+               ***/
 
           tile('align', a.align()),
 
@@ -174,6 +175,10 @@ class EverythingView extends StatelessWidget {
           tile('scaleX', a.scaleX()),
           tile('scaleY', a.scaleY()),
           tile('scaleXY', a.scaleXY()),
+
+          tile('sizeX', a.sizeX()),
+          tile('sizeY', a.sizeY()),
+          tile('sizeXY', a.size()),
 
           tile('shake', a.shake()),
           tile('shakeX', a.shakeX()),
